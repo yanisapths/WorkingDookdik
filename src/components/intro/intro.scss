@@ -45,13 +45,24 @@
       font-size: 35px;
     }
     h3{
-      font-size:30px;
+      font-size:26px;
+      span{
+        font-size:inherit;
+        color: #fa5ff5;
+      }
     }
     a{
       position:absolute;
       bottom:10px;
-      left:70%;
-      
+      left:70%;  
+    }
+    img{
+      animation:arrowBlink 2s infinite;
+    }
+    @keyframes arrowBlink{
+      100%{
+        opacity: 0.2;
+      }
     }
 
 
