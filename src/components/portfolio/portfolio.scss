@@ -19,6 +19,19 @@
     padding: 0;
     list-style: none;
     display: flex;
+    li{
+      font-size: 20px;
+      margin-right: 50px;
+      padding:7px;
+      border-radius: 1px;
+      cursor: pointer;
+      
+        &.active{
+          background-color: #4d2ee8;
+          color:white;
+        }
+    }
+   
 
     @include mobile{
       margin: 10px 0;
@@ -39,8 +52,8 @@
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 400px;
+      height: 300px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
@@ -63,14 +76,14 @@
       }
 
       img {
-        width: 100%;
+        width: 65%;
         height: 100%;
         object-fit: cover;
         z-index: 1;
       }
 
       &:hover {
-        background-color: $mainColor;
+        background-color: #4d2ee8;
         img {
           opacity: 0.2;
           z-index: 0;
