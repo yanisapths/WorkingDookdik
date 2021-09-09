@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-// import {
-//  projectsPortfolio,
-//  leisurePortfolio
-// } from "../../data";
+import {
+ projectsPortfolio,
+ leisurePortfolio
+} from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("projects");
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "projects",
@@ -20,19 +20,19 @@ export default function Portfolio() {
     }
   ];
 
-  // useEffect(() => {
-  //   switch (selected) {
-  //     case "projects":
-  //       setData(projectsPortfolio);
-  //       break;
-  //     case "leisure":
-  //       setData(leisurePortfolio);
-  //       break;
+  useEffect(() => {
+    switch (selected) {
+      case "projects":
+        setData(projectsPortfolio);
+        break;
+      case "leisure":
+        setData(leisurePortfolio);
+        break;
 
-  //     default:
-  //       setData(projectsPortfolio);
-  //   }
-  // }, [selected]);
+      default:
+        setData(projectsPortfolio);
+    }
+  }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -41,16 +41,22 @@ export default function Portfolio() {
       <ul>
         {list.map((item) => (
           <PortfolioList title={item.title}
+          active={selected === item.id}
+          setSelected={setSelected}
+          id={item.id}
           />
         ))}
       </ul>
       <div className="container">
-       <div className="item">
-         <img src="assets/art1.png" alt=""/>
-         <h3>Art</h3>
-       </div>
+        {data.map( (d) => (
+          <div className="item">
+            <img src={d.img}
+             alt="" 
+             />
+             <h3>{d.title}</h3>
           </div>
-    
+        ))}
+      </div>
     </div>
   );
 }
