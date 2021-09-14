@@ -1,64 +1,63 @@
 import "./testimonials.scss";
 
 export default function Testimonials() {
+
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
-      img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      name: "Lauren",
+      title: "donut",
+      img:"https://images.unsplash.com/photo-1631397833256-34809ae27872?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      icon:"assets/linkedin3.png",
+      desc:" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
-      img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
-      featured: true,
+      name: "Jeff",
+      title: "mister",
+      img:"https://images.unsplash.com/photo-1631397833256-34809ae27872?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      icon:"assets/linkedin3.png",
+      desc:" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      featured:true
+    
     },
     {
-      id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
-      img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      i:3,
+      name: "Max",
+      title: "dunkins",
+      img:"https://images.unsplash.com/photo-1631397833256-34809ae27872?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      icon:"assets/linkedin3.png",
+      desc:" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
   ];
-  return (
-    <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
-      <div className="container">
-        {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
-            <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
-              <img
-                className="user"
-                src={d.img}
-                alt=""
-              />
-              <img className="right" src={d.icon} alt="" />
+    return(
+      <div className="testimonials" id="testimonials">
+          <h1>Testimonials</h1>
+          <div className="container">
+            {data.map((d) => (
+
+           
+            <div className={d.featured ? "card featured" : "card"}>
+
+              <div className="top">
+                <img className="left" src="assets/down_right.png"  alt="" />
+                <img className="user" src={d.img} alt="" />
+                <img className="right"  src={d.icon} alt="" />
+              </div>
+           
+             <div className="center">
+             {d.desc}
+             </div>
+             
+             <div className="bottom">
+                <h3>{d.name}</h3>
+                <h4>{d.title}</h4>
+             </div>
+            
             </div>
-            <div className="center">
-              {d.desc}
-            </div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
-            </div>
+
+          ))}
           </div>
-        ))}
-      </div>
-    </div>
-  );
+    </div>  
+    );
 }
