@@ -25,7 +25,9 @@
             .itemContainer{
                 align-items: center;
                 display: flex;
-            
+                @include mobile{
+                    display:none;
+                  }
                 
                 .icon{
                     font-size: 15px;

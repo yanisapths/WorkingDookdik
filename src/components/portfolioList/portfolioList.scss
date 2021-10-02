@@ -5,6 +5,9 @@ li{
   padding:7px;
   border-radius: 1px;
   cursor: pointer;
+  @include mobile{
+    margin-right:20px;
+  }
   
     &.active{
       background-color: #4d2ee8;

@@ -19,6 +19,13 @@
     padding: 0;
     list-style: none;
     display: flex;
+
+    @include mobile{
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     li{
       font-size: 20px;
       margin-right: 50px;
@@ -32,12 +39,6 @@
         }
     }
    
-
-    @include mobile{
-      margin: 10px 0;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
   }
 
   .container {
@@ -69,6 +70,7 @@
         width: 130px;
         height: 100px;
       }
+
 
       h3 {
         position: absolute;

@@ -1,8 +1,13 @@
+@import "../../global.scss";
 .intro{
   //background-image: url(https://images.unsplash.com/photo-1552083940-86877723de7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
   background-size: cover;
   background-color: white;
   display:flex;
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left{ 
     flex:0.5;
@@ -18,10 +23,16 @@
       align-items:flex-end;
       justify-content:center;
       float:right;
+      @include mobile{
+        align-items:flex-start;
+      }
 
 
       img{
         height: 98%;
+        @include mobile{
+          height: 50%;
+        }
       }
 
     }
@@ -39,13 +50,25 @@
       justify-content:center;
       flex-direction: column;
       color: #4d2ee8;
+
+      @include mobile{
+        align-items: center;
+        padding-left:0;
+      }
+
     }
     h1{
       font-size:60px;
       margin: 10px 0 ;
+      @include mobile{
+       font-size: 40px;
+      }
     }
     h2{
       font-size: 35px;
+      @include mobile{
+        font-size: 20px;
+       }
     }
     h3{
       font-size:26px;
