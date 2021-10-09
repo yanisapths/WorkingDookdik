@@ -5,8 +5,12 @@
     display: flex;
     flex-direction: column;
     margin:0;
+    text-align: center;
+    @include mobile {
+      margin: 1em;
+    }
 /***********      Typography        **************/
-  p,h2,h3 
+  p,h2,h3,span,strong 
   {
     font-family: 'Roboto Mono';
   }
@@ -24,29 +28,41 @@
   h2{
     font-size: 1.75rem;
     color: white;
-    
+    margin-bottom: 1em;
+    margin-top: 1.2em;
     
     @include mobile {
       font-size: 1rem;
+      margin-bottom: 1em;
+      margin-top: 1.2em;
     }
 
   }
 
   h3 {
     font-size: 1.25rem;
-    color: #808080;
+    color: #d0d0d0;
+    font-weight: 200;
 
     @include mobile {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
+      margin-bottom: 0.5em;
     }
 
   }
   
   p{
     color: #4d2ee8;
-    margin-bottom: 1em;
+    font-style: italic;
     @include mobile {
       font-size: 0.75rem;
+      margin-bottom: 1em;
+    }
+  }
+  span{
+    color: #c2c1c1;
+    @include mobile {
+      font-size: 0.7rem;
     }
   }
 
