@@ -1,0 +1,60 @@
+@import "../../global.scss";
+
+.resume {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin:0;
+/***********      Typography        **************/
+  p,h2,h3 
+  {
+    font-family: 'Roboto Mono';
+  }
+  h1 {
+    margin-top:1em;
+    font-size:3rem;
+    color: white;  
+    @include mobile {
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+  }
+
+  h2{
+    font-size: 1.75rem;
+    color: white;
+    
+    
+    @include mobile {
+      font-size: 1rem;
+    }
+
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: #808080;
+
+    @include mobile {
+      font-size: 0.75rem;
+    }
+
+  }
+  
+  p{
+    color: #4d2ee8;
+    margin-bottom: 1em;
+    @include mobile {
+      font-size: 0.75rem;
+    }
+  }
+
+/**********************************************/
+/***********      Layout        **************/
+    main {
+      width: 90%;
+      max-width: 900px; 
+      margin: 0 auto;  
+    }
+}

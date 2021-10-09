@@ -21,7 +21,7 @@ init(textRef.current,{
     <div className="intro" id="intro">
       <div className="wrapper">
         
-        <h1>About Me.</h1>
+        <h1>ABOUT ME.</h1>
         <div className="imgContainer">
           <img src="assets/man.png" alt="" />
         </div>
