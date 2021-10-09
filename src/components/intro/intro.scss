@@ -1,9 +1,10 @@
 @import "../../global.scss";
 .intro{
+  background-size: cover;
   background-color: white;
   display:flex;
   flex-direction: column;
-  margin:1em auto;
+  // margin:1em auto;
   overflow: hidden;
   /***********      Typography        **************/
   h1{
