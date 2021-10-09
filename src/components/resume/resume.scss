@@ -3,11 +3,12 @@
 .resume {
     background-color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: column;
-    margin:0;
+    // flex-direction: column;
     text-align: center;
+    margin:0;
     @include mobile {
       margin: 1em;
+      text-align: left;
     }
 /***********      Typography        **************/
   p,h2,h3,span,strong 
@@ -71,6 +72,6 @@
     main {
       width: 90%;
       max-width: 900px; 
-      margin: 0 auto;  
+     margin: 0 auto;
     }
 }

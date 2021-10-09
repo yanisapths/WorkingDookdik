@@ -1,5 +1,6 @@
 
 import "./menu.scss";
+import {Mail,GitHub} from "@material-ui/icons";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
@@ -12,15 +13,23 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#resume">PORTFOLIO</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#works">WORKS</a>
+          <a href="#works">WORK</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        {/* <li onClick={()=>setMenuOpen(false)}>
           <a href="#testimonials">TESTIMONIALS</a>
-        </li>
+        </li> */}
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#contact">CONTACT</a>
         </li>
       </ul>
+      <div className="itemContainer">
+                    <ul><a href="https://github.com/yanisapths" ><GitHub className="icon"/></a></ul>
+                     <span>yanisapths</span> 
+                    </div>
+                    <div className="itemContainer">
+                      {/* <ul><Mail className="icon"/></ul>  */}
+                       <span>yanisa21@live.com</span>
+                    </div>
     </div>
   );
 }

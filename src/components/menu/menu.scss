@@ -22,7 +22,7 @@
         margin-top:1.5em;
         padding:0;
         list-style:none;
-        font-size:40px;
+        font-size:30px;
         color:black;
         width: 100%;
 
@@ -38,10 +38,40 @@
             font-weight:700;
             color:#4d2ee8;
         }
+        @include mobile {
+          margin-bottom:0.2em;
+        }
         
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
     }
  
   }
+
+.itemContainer {
+  display:none;
+  // .icon,
+  // span {
+  //   display:none;
+  // }
+  @include mobile{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .icon {
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    span{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}
 
 }
 
