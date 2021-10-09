@@ -1,4 +1,5 @@
 import "./topbar.scss";
+import React from "react";
 import {Mail,GitHub} from "@material-ui/icons";
 
 export default function Topbar( {menuOpen, setMenuOpen} ) {
@@ -7,7 +8,7 @@ export default function Topbar( {menuOpen, setMenuOpen} ) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        Working Dookdik
+                      D!k.
                     </a>
                     <div className="itemContainer">
                     <ul><a href="https://github.com/yanisapths" ><GitHub className="icon"/></a></ul>
@@ -22,7 +23,7 @@ export default function Topbar( {menuOpen, setMenuOpen} ) {
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
-                        <span className="line3"></span>
+                        {/* <span className="line3"></span> */}
                     </div>
                 </div>
             </div>

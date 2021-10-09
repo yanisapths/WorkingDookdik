@@ -12,29 +12,40 @@ init(textRef.current,{
   showCursor:true,
   backDelay:1500,
   backSpeed:60,
-  strings: ["Creative Works","Random Stuff"],
+  strings: ["Happy visiting."],
 });
 
   },[])
 
   return (
     <div className="intro" id="intro">
-      <div className="left">
+      <div className="wrapper">
+        
+        <h1>About Me.</h1>
         <div className="imgContainer">
-          <img src="assets/art1-removebg.png" alt="" />
+          <img src="assets/man.png" alt="" />
         </div>
+        <h2>Hi, I'm Dookdik.</h2>
+        <h3> 
+          I love to read & write about many things. 
+          I'm practicing web design and css as well :) 
+          
+          <p>
+          <span ref={textRef}></span>
+          </p>
+         
+        </h3>
+
       </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Collective & Works</h2>
-          <h1>Dookdik's</h1>
-          <h3> I do <span ref={textRef}></span> and make sure they're delicious.
-          </h3>
-        </div>
+
+          {/* <h3> I do <span ref={textRef}></span> and make sure they're delicious.
+          </h3> */}
+{/* 
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
-        </a>
-      </div>
-    </div>
+        </a> */}
+
+</div>/* /. end intro */
+
   );
 }
