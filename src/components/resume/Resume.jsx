@@ -26,7 +26,7 @@ export default function Resume() {
 
                 <h2>Play Time</h2>
                 <h3>Music, guitar</h3>
-                <h3>Dogs</h3>
+                <h3>My family pets</h3>
                 <h3>Vegetarian Cooking</h3>
                 <h3>Coffee</h3>   
 
