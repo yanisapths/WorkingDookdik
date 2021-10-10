@@ -29,6 +29,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                     <div className="itemContainer">
                       {/* <ul><Mail className="icon"/></ul>  */}
                        <span>yanisa21@live.com</span>
+                       <span> <logo>D!k. </logo>| 2021</span>
                     </div>
     </div>
   );

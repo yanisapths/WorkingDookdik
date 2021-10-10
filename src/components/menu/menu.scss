@@ -19,7 +19,7 @@
     }
 
     ul{
-        margin-top:1.5em;
+        margin-top:2em;
         padding:0;
         list-style:none;
         font-size:30px;
@@ -39,7 +39,7 @@
             color:#4d2ee8;
         }
         @include mobile {
-          margin-bottom:0.2em;
+          margin-bottom:0em;
         }
         
     }
@@ -54,21 +54,28 @@
 .itemContainer {
   display:none;
   // .icon,
-  // span {
-  //   display:none;
+  //  span{
+  // display:none;
   // }
+   
   @include mobile{
     align-items: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-top: -1rem;
     .icon {
       font-size: 1.1rem;
       text-decoration: none;
     }
     span{
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 1rem;
+      // font-weight: 500;
+      //font-family: 'Forum', cursive;
+      logo {
+        font-weight: 700;
+        font-family: 'Forum', cursive;
+      }
     }
   }
 }

@@ -54,10 +54,11 @@ a {
         }
         
         .right{
-    
+            overflow: hidden;
             .hamburger{
-                width: 45px;
-                height: 1.5em;
+                overflow: hidden;
+                width: 47px;
+                height: 1.7em;
                 display:flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -78,6 +79,7 @@ a {
         background-color:#f6f6f6;
         opacity: 0.9;
         color: #000000;
+        overflow: hidden;
         
         .hamburger{
             span{
