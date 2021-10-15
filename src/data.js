@@ -1,18 +1,46 @@
 export const projectsPortfolio = [
     {
       id: 1,
-      title: "Social Media App",
+      title: " Web App UI design ",
       img:
-        "https://images.unsplash.com/photo-1630797160655-35e602b644c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        "assets/SE-design.png"
+    },
+    {
+      id: 2,
+      title: "Work 2",
+      img: "assets/tmp1.png"
+    }
+    ,
+    {
+      id: 3,
+      title: "Work 3 ",
+      img: "assets/tmp1.png"
+    }
+    ,
+    {
+      id: 4,
+      title: "Work 4",
+      img: "assets/tmp2.png"
+    },
+    {
+      id: 5,
+      title: "Work 5 ",
+      img: "assets/tmp1.png"
+    }
+    ,
+    {
+      id: 6,
+      title: "Work 6",
+      img: "assets/tmp2.png"
     }
     
   ];
   
   export const leisurePortfolio = [
     {
-      id: 1,
+      id: 2,
       title: "Web Social Media App",
-      img: "https://images.unsplash.com/photo-1631005258849-aee1ccce98f7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNjZ8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      img: "assets/tmp1.png"
     }
   ];
   

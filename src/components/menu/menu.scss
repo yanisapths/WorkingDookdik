@@ -19,17 +19,16 @@
     }
 
     ul{
-        margin-top:2em;
+        margin-top:1.5em;
         padding:0;
         list-style:none;
-        font-size:30px;
         color:black;
         width: 100%;
 
         li {
          margin-bottom:35px;
          a {
-            font-size:1em;
+            font-size:4rem;
             color:inherit;
             text-decoration:none;
            }
@@ -39,7 +38,7 @@
             color:#4d2ee8;
         }
         @include mobile {
-          margin-bottom:0em;
+          margin-bottom:0.2em;
         }
         
     }
@@ -54,28 +53,21 @@
 .itemContainer {
   display:none;
   // .icon,
-  //  span{
-  // display:none;
+  // span {
+  //   display:none;
   // }
-   
   @include mobile{
     align-items: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: -1rem;
     .icon {
       font-size: 1.1rem;
       text-decoration: none;
     }
     span{
-      font-size: 1rem;
-      // font-weight: 500;
-      //font-family: 'Forum', cursive;
-      logo {
-        font-weight: 700;
-        font-family: 'Forum', cursive;
-      }
+      font-size: 1.2rem;
+      font-weight: 500;
     }
   }
 }

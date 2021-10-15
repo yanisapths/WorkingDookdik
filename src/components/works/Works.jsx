@@ -6,11 +6,11 @@ export default function Works() {
   const data = [
     {
       id: 1,
-      icon:"./assets/art1-removebg.png",
-      title: "S1",
-      desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      img:
-        "https://images.unsplash.com/photo-1631096207334-5a250b246a0c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNDh8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      // icon:"./assets/art1-removebg.png",
+      title: "WORK",
+      // desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      // img:
+      //   "./assets/intro-bg-1.png"
     },
     {
       id: 2,
@@ -18,16 +18,16 @@ export default function Works() {
       title: "S2",
       desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       img:
-        "https://images.unsplash.com/photo-1630797160655-35e602b644c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        "./assets/intro-bg-1.png"
     },
-    {
-      id: 3,
-      icon:"./assets/art1-removebg.png",
-      title: "S3",
-      desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      img:
-        "https://images.unsplash.com/photo-1630797160655-35e602b644c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-    }
+    // {
+    //   id: 3,
+    //   icon:"./assets/art1-removebg.png",
+    //   title: "S3",
+    //   desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   img:
+    //     "./assets/intro-bg-1.png"
+    // }
 
   ];
 
@@ -45,12 +45,12 @@ export default function Works() {
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <div className="imgContainer">
+                {/* <div className="imgContainer">
                   <img src="{d.icon}" alt="" />
-                </div>
+                </div> */}
                 <h2>{d.title}</h2>
-                <p>{d.desc}</p>
-                <span>Projects</span>
+                {/* <p>{d.desc}</p> */}
+                {/* <span>Projects</span> */}
               </div>
             </div>
             <div className="right">

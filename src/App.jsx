@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-// import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+import Portfolio from "./components/portfolio/Portfolio";
+// import Works from "./components/works/Works";
 // import Testimonials from "./components/testimonials/Testimonials";
 // import Contact from "./components/contact/Contact";
 import Resume from "./components/resume/Resume";
@@ -19,9 +19,10 @@ function App() {
      <div className="sections">
        <Intro/>
        <Resume/>
-       {/* <Works/>
-       <Testimonials/>
-       <Contact/> */}
+       {/* <Works/> */}
+       <Portfolio/>
+       {/* <Testimonials/> */}
+       {/* <Contact/> */}
      </div>
     </div>
   );
