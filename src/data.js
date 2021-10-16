@@ -36,11 +36,11 @@ export const projectsPortfolio = [
     
   ];
   
-  export const leisurePortfolio = [
+  export const resumePortfolio = [
     {
-      id: 2,
-      title: "Web Social Media App",
-      img: "assets/tmp1.png"
+      id: 1,
+      title: "resume",
+      img: "assets/cv1.png"
     }
   ];
   

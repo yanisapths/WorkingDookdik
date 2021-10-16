@@ -3,7 +3,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
  projectsPortfolio,
- leisurePortfolio
+ resumePortfolio
 } from "../../data";
 
 export default function Portfolio() {
@@ -15,8 +15,8 @@ export default function Portfolio() {
       title: "Projects"
     },
     {
-      id: "leisure",
-      title: "Leisure"
+      id: "resume",
+      title: "CV/Resume"
     }
   ];
 
@@ -25,8 +25,8 @@ export default function Portfolio() {
       case "projects":
         setData(projectsPortfolio);
         break;
-      case "leisure":
-        setData(leisurePortfolio);
+      case "resume":
+        setData(resumePortfolio);
         break;
 
       default:
