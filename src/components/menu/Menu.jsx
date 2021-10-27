@@ -13,13 +13,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#resume">PORTFOLIO</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#portfolio">WORK</a>
-        </li>
-        {/* <li onClick={()=>setMenuOpen(false)}>
-          <a href="#testimonials">TESTIMONIALS</a>
-        </li> */}
-        <li onClick={()=>setMenuOpen(false)}>
-          <a href="#contact">CONTACT</a>
+          <a href="#letter">WORK</a>
         </li>
       </ul>
       <div className="itemContainer">
