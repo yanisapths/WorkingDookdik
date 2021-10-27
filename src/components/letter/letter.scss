@@ -4,6 +4,31 @@
   background-size: cover;
   background-color: white;
   display:flex;
+  ul{
+    padding-inline-start: 0px;
+  }
+  a{
+    text-align: center;
+    font-family: 'Forum', cursive;
+    font-weight: 700;
+    //color: #0000F0;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid #BCFF78;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 4px rgba(170, 170, 169, 0.22);
+    border-radius: 18px;
+    
+    span.span-link{
+      margin: 20px;
+      font-size: 1.8rem;
+      @include mobile {
+        margin: 12px;
+        font-size: 1.2rem;
+      }
+    
+    }
+  }
+ 
   h1 {
     font-family: 'Poppins', sans-serif;
     span{
@@ -24,6 +49,9 @@
     }
   }
   h3{
+   padding: 0 0 0 0 ;
+   font-size: 1.5rem;
+    
    @include mobile{
      line-height: 0.75rem;
      font-size: 0.8rem;
@@ -69,11 +97,12 @@
      flex:0.7;
      padding-top:1em;
      justify-content: space-between;
-     margin:3em 4.5em 0 0;
+     margin:3em 4em 0 0;
      margin-bottom:0;
     
      h3{
        padding-bottom: 1em;
+       overflow: hidden;
       @include mobile{
         font-size: 1rem;
       }
@@ -91,7 +120,8 @@
        
      }
      footer{
-      padding-top:300px;
+      padding-top:180px;
+      margin-right:4em;
       @include mobile {
         padding-top: 0px;   
         padding-bottom: 5em;
@@ -113,12 +143,14 @@
           h3{
             line-height: 15px;
             font-size: 1rem;
+        
             @include mobile {
               font-size: 0.7rem; 
               line-height:7px;
              }
           }
         }
+       
          .imgContainer{
            margin: 1em;
           width:90px;
@@ -129,19 +161,20 @@
             object-fit: cover;
           }
           @include mobile {
-          width:50px;
-          height:50px;
-           }
-         }
-         span{
+            width:50px;
+            height:50px;
+          }
+        }
+        span{
           padding-top:40px;
           line-height: 20px;
           @include mobile {
             font-size: 0.75rem;
-          padding-top:20px;
-          line-height: 13px;
-             }
-         }
+            padding-top:20px;
+            line-height: 13px;
+          }
+        }
+      
        
        }
        

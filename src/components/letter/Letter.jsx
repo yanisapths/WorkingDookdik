@@ -11,7 +11,7 @@ export default function Letter() {
             <img src="./assets/SE-design.png" alt="" />
             </div>
             <div className="right">
-            <h3>From strangers... to friends ,</h3>
+           <p> <h3>From strangers... to friends ,</h3></p>
             <p>I’m a lifelong learner. I love learning and wroking with people and never stop trying. 
 From recent projects during many courses in the university such as Software Engineering, Database system , 
 Animation , OOP ,  and Web Programming, I worked with different group of people all along , 
@@ -31,6 +31,20 @@ To be humble , understand yourself , and be kind doesn’t mean a weakness.</p>
 そして私は頑張れです。
 どうぞよろしくお願いいたします。
 </p>
+       
+<p>
+<ul>
+    <h3>Download my <a href="https://drive.google.com/file/d/1BXyeFgVcGuYeJ75RLXld90uk9k1NoJMV/view">
+        <span className="span-link">resume</span>
+        </a>
+    </h3>
+                   
+</ul>
+</p>
+           
+        
+        
+    
     <footer>
        <div className="contact">
             <div className="tel">
