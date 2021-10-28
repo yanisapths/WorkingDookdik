@@ -12,12 +12,12 @@ export default function Letter() {
             </div>
             <div className="right">
            <p> <h3>From strangers... to friends ,</h3></p>
-            <p>I’m a lifelong learner. I love learning and wroking with people and never stop trying. 
+            <p>I’m a lifelong learner. I love learning and working with people and never stop trying. 
 From recent projects during many courses in the university such as Software Engineering, Database system , 
 Animation , OOP ,  and Web Programming, I worked with different group of people all along , 
 </p>
 <p>
-though I aware about making mistakes, it is important to have courage to be a changer or admit 
+though I'm aware about making mistakes, it is important to have courage to be a changer or admit 
 what i don’t know, ask questions, foster the team to grow and finish the job together.</p>
 <p>  
 Communication, trust and support have always been crucial parts of my life. I’m a very team player type 
