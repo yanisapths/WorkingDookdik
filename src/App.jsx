@@ -3,6 +3,7 @@ import Intro from "./components/intro/Intro";
 import Resume from "./components/resume/Resume";
 import Letter from "./components/letter/Letter";
 import Contact from "./components/contact/Contact";
+import Dir from "./components/dir/Dir";
 
 import "./app.scss";
 import { useState } from "react";
@@ -18,6 +19,7 @@ function App() {
        <Intro/>
        <Resume/>
        <Letter />
+       <Dir />
        <Contact />
      </div>
     </div>
