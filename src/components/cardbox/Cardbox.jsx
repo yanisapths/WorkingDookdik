@@ -44,7 +44,7 @@ export default function Cardbox() {
           />
         ))}
       </ul> */}
-      <div className="container">
+      <div className="container" >
         {data.map( (d) => (
           <div className="item">
             {/* <img src={d.img}
