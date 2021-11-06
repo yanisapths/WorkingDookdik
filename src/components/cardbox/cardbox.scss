@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.cardbox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /*******************Typography *********************************************/
+  h1 {
+    margin-top:1em;
+    font-size: 2rem;
+    overflow: hidden;
+    padding-top:40px;
+    @include mobile{
+      font-size: 1.5em;
+    }
+  }
+  h5 {
+    font-family: 'Forum';
+    font-size: 1.5rem;
+    //padding:0.5em;
+    text-align: center;
+    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    @include mobile{
+      font-size: 1.2rem;
+    }
+    
+  }
+  p{
+    font-family: 'Forum';
+    font-size: 0.75rem;
+    margin: 1em;
+    @include mobile{
+      font-size: 0.7rem;
+     // padding-top: 2rem;
+    }
+
+  }
+  span{
+    margin-top: -2.5em;
+    line-height:20px;
+    font-family: 'Forum';
+    font-size: 0.8em;
+    text-align:center;
+    font-weight:bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /****************************************************************/
+  
+    .container {
+        width:70%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom:5em;
+  
+  
+      @include mobile{
+        width: 80%;
+        height: 90%;
+        display: flex;
+      }
+
+
+        .item {
+          padding-top: 3em;
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+          background-color:rgb(238, 238, 238);
+          width: 350px;
+          height: 250px;
+          border-radius:1%;
+          margin: 10px 20px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: black;
+          position: relative;
+          transition: all .1s ease;
+          cursor: pointer;
+          overflow: hidden;
+          
+         
+    
+          @include mobile{
+            width: 400px;
+            height: 230px;
+          }
+          &:hover {
+            background-color: black;
+            color: rgb(238, 238, 238);
+            img {
+              opacity: 0.2;
+              z-index: 0;
+            }
+          }
+        }
+    }
+
+}
+
+
+
+

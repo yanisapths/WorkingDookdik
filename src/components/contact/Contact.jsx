@@ -23,8 +23,8 @@ export default function Contact() {
     <div className="contact" id="contact">
     <form ref={form} onSubmit={sendEmail}>
       <h1>Get In Touch</h1>
-      <h3>If you'd like to say hi or question,</h3>
-      <h3>My inbox is always open. I'll reply asap.</h3>
+      <h3>If you'd like to say hi or question, My inbox is always open. I'll reply asap.</h3>
+      <h3></h3>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>

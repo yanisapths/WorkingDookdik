@@ -1,32 +1,28 @@
 import { useEffect,useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
-import "./portfolio.scss";
+//import PortfolioList from "../portfolioList/PortfolioList";
+import "./cardbox.scss";
 import {
- projectsPortfolio,
- resumePortfolio
+ projectsPortfolio
 } from "../../data";
 
-export default function Portfolio() {
+export default function Cardbox() {
   const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]);
-  const list = [
-    {
-      id: "projects",
-      title: "Projects"
-    },
-    {
-      id: "resume",
-      title: "CV/Resume"
-    }
-  ];
+  // const list = [
+  //   {
+  //     id: "projects",
+  //     title: "Projects"
+  //   },
+  //   {
+  //     id: "resume",
+  //     title: "CV/Resume"
+  //   }
+  // ];
 
   useEffect(() => {
     switch (selected) {
       case "projects":
         setData(projectsPortfolio);
-        break;
-      case "resume":
-        setData(resumePortfolio);
         break;
 
       default:
@@ -35,10 +31,11 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="cardbox" id="cardbox">
      
-      <h1>RECENT PROJECTS</h1>
-      <ul>
+      <h1>REFLECTIONS</h1>
+      <p></p>
+      {/* <ul>
         {list.map((item) => (
           <PortfolioList title={item.title}
           active={selected === item.id}
@@ -46,14 +43,19 @@ export default function Portfolio() {
           id={item.id}
           />
         ))}
-      </ul>
+      </ul> */}
       <div className="container">
         {data.map( (d) => (
           <div className="item">
-            <img src={d.img}
+            {/* <img src={d.img}
              alt="" 
              />
-             <h3>{d.title}</h3>
+             <h3>{d.title}</h3> */}
+            <p>{d.title}</p>
+            <br /> 
+            <span>{d.sub}</span>
+            <h5>{d.desc}</h5>
+            <p>{d.bottom}</p>
           </div>
         ))}
       </div>

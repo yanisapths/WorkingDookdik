@@ -6,14 +6,15 @@ import "./card.scss";
 
 const useStyles = makeStyles({
   gridContainer: {
-    paddingLeft: "40px",
-    paddingRight: "40px"
+    paddingLeft:"40px",
+    paddingRight:"40px",
   }
 });
 
 export default function CardApp() {
   const classes = useStyles();
   return (
+      <div className="main">
     <Grid
       container
       spacing={4}
@@ -35,6 +36,10 @@ export default function CardApp() {
       <Grid item xs={12} sm={6} md={4}>
         <Card />
       </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <Card />
+      </Grid>
     </Grid>
+      </div>
   );
 }

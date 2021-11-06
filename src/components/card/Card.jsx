@@ -5,11 +5,11 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import "./card.scss";
+import { cardData } from "../../carddata";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 200
+    minWidth: 100,
   },
   bullet: {
     display: "inline-block",
@@ -26,35 +26,36 @@ const useStyles = makeStyles({
 
 export default function OutlinedCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+//   const bull = <span className={classes.bullet}>•</span>;
+
 
   return (
-    <div className="card" id="card">
     <Card className={classes.root} variant="outlined">
       <CardContent>
+    
         <Typography
           className={classes.title}
           color="textSecondary"
           gutterBottom
         >
-          Word of the Day
+          
         </Typography>
-        <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
+        <Typography variant="h5" component="h2" className={classes.desc}> 
+          {/* be{bull}nev{bull}o{bull}lent */}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        {/* <Typography className={classes.pos} color="textSecondary">
           adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
+        </Typography> */}
+        <Typography variant="body2" component="p" className={classes.bottom}>
+          {/* well meaning and kindly.
           <br />
-          {'"a benevolent smile"'}
+          {'"a benevolent smile"'} */}
         </Typography>
+ 
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        {/* <Button size="small">Learn More</Button> */}
       </CardActions>
     </Card>
-    </div>
   );
 }

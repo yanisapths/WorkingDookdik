@@ -3,8 +3,8 @@ import Intro from "./components/intro/Intro";
 import Resume from "./components/resume/Resume";
 import Letter from "./components/letter/Letter";
 import Contact from "./components/contact/Contact";
-import CardApp from "./components/card/CardApp";
 import Menu from "./components/menu/Menu";
+import Cardbox from "./components/cardbox/Cardbox";
 
 import "./app.scss";
 import { useState } from "react";
@@ -19,7 +19,7 @@ function App() {
        <Intro/>
        <Resume/>
        <Letter />
-       <CardApp />
+       <Cardbox />
        <Contact />
      </div>
     </div>
