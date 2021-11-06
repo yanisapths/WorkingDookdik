@@ -22,13 +22,16 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
     <form ref={form} onSubmit={sendEmail}>
+      <h1>Get In Touch</h1>
+      <h3>If you'd like to say hi or question,</h3>
+      <h3>My inbox is always open. I'll reply asap.</h3>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <button type="submit" value="Send">Send</button>
     </form>
     </div>
   );
