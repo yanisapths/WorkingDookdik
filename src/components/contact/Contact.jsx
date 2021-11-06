@@ -1,32 +1,35 @@
 
-import {useState} from 'react';
+//import {useState} from 'react';
 import "./contact.scss";
-
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_032RqDsJ5pVUOJEXXUrrl");
 export default function Contact() {
+  const form = useRef();
 
-    const [message,setMessage] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    const handleSubmit = (e)=>{
-      e.preventDefault();
-      setMessage(true);
-    }
+    emailjs.sendForm('service_e2ykatg', 'template_oc4h2rg', form.current, 'user_032RqDsJ5pVUOJEXXUrrl')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <div className="contact" id="contact">
-
-      <div className="left">
-        <img src="https://images.unsplash.com/photo-1499380848949-2960e980ed02?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDY1fHxwbGFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-      </div>
-      <div className="right">
-        <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
-            <button>Send</button>
-            {message && <span>Thank, I'll reply ASAP </span>}
-        </form>
-      </div>
-
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
     </div>
-  )
-}
+  );
+};
