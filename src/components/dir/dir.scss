@@ -1,35 +1,42 @@
 .dir{
   background-size: cover;
   background-color: white;
-  display:flex;
-  flex-direction: column;
+  overflow: hidden;
   align-items: center;
-    main{
-        width: 60%;
-        margin: 7em;
-        align-items: center;
+  display: flex;
+  flex-direction: column;
+  h1{
+    margin:1.75em;
+  }
         .cardContainer {
+            width: 50%;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             
           }
     
           .one {
-            width: 30%;
-            height: 300px;
+            width: 31%;
+            height: 250px;
             margin: 0.5em;
             border: 1px solid black;
+            
           }
     
           .two {
-            width: 30%;
+            width: 31%;
+            height: 250px;
             margin: 0.5em;
             border: 1px solid black;
+           
           }
     
           .three {
-            width: 30%;
+            width: 31%;
+            height: 250px;
             margin: 0.5em;
             border: 1px solid black;
+            
           }
-    }
 }
