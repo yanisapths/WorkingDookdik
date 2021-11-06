@@ -36,28 +36,34 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-     
-      <h1>PORTFOLIO</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList title={item.title}
-          active={selected === item.id}
-          setSelected={setSelected}
-          id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map( (d) => (
-          <div className="item">
-           <p>{d.title}</p>
-            <br /> 
-            <span>{d.sub}</span>
-            <h5>{d.desc}</h5>
-            <p>{d.bottom}</p>
+     <h1>PORTFOLIO</h1>
+      <main>
+        <div className="left">
+          <ul>
+            {list.map((item) => (
+              <PortfolioList title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+              />
+            ))}
+          </ul>
+        </div>
+      <div className="right">
+        <div className="container">
+          {data.map( (d) => (
+            <div className="item">
+            <p>{d.title}</p>
+              <br /> 
+              <span>{d.sub}</span>
+              <h5>{d.desc}</h5>
+              <p>{d.bottom}</p>
+            </div>
+          ))}
           </div>
-        ))}
-      </div>
+       </div>
+      </main>
+   
     </div>
   );
 }
