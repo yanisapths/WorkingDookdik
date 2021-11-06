@@ -3,11 +3,11 @@ import Intro from "./components/intro/Intro";
 import Resume from "./components/resume/Resume";
 import Letter from "./components/letter/Letter";
 import Contact from "./components/contact/Contact";
-import Dir from "./components/dir/Dir";
+import CardApp from "./components/card/CardApp";
+import Menu from "./components/menu/Menu";
 
 import "./app.scss";
 import { useState } from "react";
-import Menu from "./components/menu/Menu";
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -19,7 +19,7 @@ function App() {
        <Intro/>
        <Resume/>
        <Letter />
-       <Dir />
+       <CardApp />
        <Contact />
      </div>
     </div>
