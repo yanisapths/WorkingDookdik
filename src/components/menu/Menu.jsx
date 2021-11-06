@@ -15,6 +15,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#letter">WORK</a>
         </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#contact">CONTACT</a>
+        </li>
       </ul>
       <div className="itemContainer">
                     <ul><a href="https://github.com/yanisapths" ><GitHub className="icon"/></a></ul>
