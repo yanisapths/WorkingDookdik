@@ -36,12 +36,14 @@
     font-family: 'Roboto Mono';
     color:#0000F0;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 3px #e60073, 0 0 3px #e60073, 0 0 8px #e60073;
-    font-size: 1.5em !important;
+    font-size: 1em !important;
     @include mobile{
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 1.5px #e60073, 0 0 1.5px #e60073, 0 0 5px #e60073;
     font-size: 1em !important;
     }
-   
+  }
+  p{
+    font-size: 0.5em;
   }
 
 

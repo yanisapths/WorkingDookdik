@@ -34,7 +34,7 @@ const Emoji = props => (
   return (
     <div className="contact-mail" id="contact">
     <form ref={form} onSubmit={sendEmail}>
-      <h1>Get In Touch</h1>
+    <h1><Emoji label=" Waving Hand" symbol="👋"/>Get In Touch</h1>
       <h3>If you'd like to say hi or question, My inbox is always open. I'll reply asap.</h3>
       <h3></h3>
       <label>Name</label>

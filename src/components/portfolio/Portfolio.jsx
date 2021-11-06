@@ -1,28 +1,32 @@
 import { useEffect,useState } from "react";
-//import PortfolioList from "../portfolioList/PortfolioList";
-import "./cardbox.scss";
+import PortfolioList from "../portfolioList/PortfolioList";
+import "./portfolio.scss";
 import {
- projectsPortfolio
-} from "../../data";
+ projectsPortfolio,
+ leisurePortfolio
+} from "../../portdata";
 
-export default function Cardbox() {
+export default function Portfolio() {
   const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]);
-  // const list = [
-  //   {
-  //     id: "projects",
-  //     title: "Projects"
-  //   },
-  //   {
-  //     id: "resume",
-  //     title: "CV/Resume"
-  //   }
-  // ];
+  const list = [
+    {
+      id: "projects",
+      title: "Projects"
+    },
+    {
+      id: "leisure",
+      title: "Leisure"
+    }
+  ];
 
   useEffect(() => {
     switch (selected) {
       case "projects":
         setData(projectsPortfolio);
+        break;
+      case "leisure":
+        setData(leisurePortfolio);
         break;
 
       default:
@@ -31,11 +35,10 @@ export default function Cardbox() {
   }, [selected]);
 
   return (
-    <div className="cardbox" id="cardbox">
+    <div className="portfolio" id="portfolio">
      
-      <h1>REFLECTIONS</h1>
-      <p></p>
-      {/* <ul>
+      <h1>PORTFOLIO</h1>
+      <ul>
         {list.map((item) => (
           <PortfolioList title={item.title}
           active={selected === item.id}
@@ -43,11 +46,11 @@ export default function Cardbox() {
           id={item.id}
           />
         ))}
-      </ul> */}
-      <div className="container" >
+      </ul>
+      <div className="container">
         {data.map( (d) => (
           <div className="item">
-            <p>{d.title}</p>
+           <p>{d.title}</p>
             <br /> 
             <span>{d.sub}</span>
             <h5>{d.desc}</h5>

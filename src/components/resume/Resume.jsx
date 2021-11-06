@@ -9,10 +9,6 @@ export default function Resume() {
                 
                 <p>// I am Yanisa Poongthaisong. ('Dookdik') </p>
                 <p><strong>Contact me to work together!</strong></p>
-                {/* <p> <ul>
-                        <li><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:44a63c91-373a-4952-8e52-850989db0cb3">resume</a></li>
-                    </ul> </p> */}
-
                 <h2>Main skills</h2>
                 <h3>CSS, HTML</h3>
                 <h3>Basic web design, Figma</h3>

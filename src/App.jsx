@@ -5,7 +5,7 @@ import Letter from "./components/letter/Letter";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Cardbox from "./components/cardbox/Cardbox";
-
+import Portfolio from "./components/portfolio/Portfolio";
 import "./app.scss";
 import { useState } from "react";
 
@@ -18,6 +18,7 @@ function App() {
      <div className="sections">
        <Intro/>
        <Resume/>
+       <Portfolio />
        <Letter />
        <Cardbox />
        <Contact />
