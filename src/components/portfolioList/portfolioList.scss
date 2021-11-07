@@ -2,11 +2,12 @@
 
   li{
   width:100%;
-  font-size: 20px;
+  font-size: 1.1em;
   //margin-right: 50px;
-  padding:7px;
+  padding:20px;
   border-radius: 1px;
   cursor: pointer;
+  border-left: 2px solid rgb(221, 221, 221);
   @include mobile{
     //margin-right:0px;
     width:100%;
@@ -19,6 +20,7 @@
   
     &.active{
       border-left: 2px solid black;
+      color: #0000f0;
       background-color:rgb(238, 238, 238);
     }
   }

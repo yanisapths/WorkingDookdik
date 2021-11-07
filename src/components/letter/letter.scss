@@ -44,23 +44,23 @@
   }
   p{
     font-size: 1.2rem;
-    @include mobile{
-     font-size: 1rem;
-    }
+
   }
   h3{
    padding: 0 0 0 0 ;
    font-size: 1.5rem;
     
    @include mobile{
-     line-height: 0.75rem;
-     font-size: 0.8rem;
+     font-size: 1rem;
+     line-height: 20px;
+     overflow: hidden;
+    
    }
   }
 
   @include mobile{
-    flex-direction: column;
-    display: inline-block;
+    display : flex;
+    flex-direction:row;
     margin: 0 auto;
     
   }
@@ -79,15 +79,17 @@
         height:70%;
         object-fit: cover;
         @include mobile{
-        margin: 2em 0  0 5em;
-        width:70%;
-        height:50%;
+        margin: 5em 0  0 0 ;
+        width:100%;
+        height:60%;
+        }
+        &:hover {
+          transform: scale(1.08);
         }
       }
       @include mobile{
-      flex-direction:column;
-      width: 100%;
-      flex:1;
+        width: 100%;
+      flex:0.35;
        padding-top: 2rem;
        font-size: 0.5rem;
        
@@ -99,6 +101,10 @@
      justify-content: space-between;
      margin:3em 4em 0 0;
      margin-bottom:0;
+     @include mobile{
+      flex:0.65;
+      width: 100%;
+     }
     
      h3{
        padding-bottom: 1em;
@@ -114,7 +120,7 @@
        text-align: left;
        margin-right:5em;
        @include mobile{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-right:2em;
       }
        

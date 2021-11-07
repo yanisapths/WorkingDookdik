@@ -55,7 +55,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <head>
-     <h1>PORTFOLIO</h1>
+     <h1>What I've learned</h1>
      </head>
       <main>
         <div className="left">
@@ -73,11 +73,13 @@ export default function Portfolio() {
         <div className="container">
           {data.map( (d) => (
             <div className="item">
-            <p>{d.title}</p>
-              <br /> 
-              <span>{d.sub}</span>
+            <h3>{d.title}</h3>
+              <p>{d.sub}</p>
+              <br />
               <h5>{d.desc}</h5>
               <p>{d.bottom}</p>
+              <a href="https://www.udemy.com/certificate/UC-621cd0cd-c42c-4dc6-b635-272fec4aac97/">{d.link}</a>
+              <br />
             </div>
           ))}
           </div>

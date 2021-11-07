@@ -23,9 +23,8 @@
     font-family: 'Roboto Mono';
     font-style: italic;
     @include mobile{
-      font-size: 0.5em;
+      font-size: 0.7em;
       overflow: hidden;
-      text-align: center;
       padding-left: 50px;
       padding-right: 50px;
       margin-top: -1em;
@@ -51,6 +50,7 @@
     width: 95%;
     height: 80%;
     display:flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -61,33 +61,35 @@
       height: 30px;
       font-size:1.3em;
       border-color: transparent;
-      padding:5px;
-      box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.25);
+     
+      //padding:5px;
+      box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.15);
       @include mobile{
-        width: 230px;
-        height: 25px;
+        width: 60%;
         font-size:1rem;
-        padding:3px;
       }
     }
     label{
+      margin-bottom:-1em;
+     //font-weight:bolder;
+     font-size: 1.2rem;
+    
       @include mobile{
-        font-size: 0.85rem;
         overflow: hidden;
       }
     }
 
     textarea{
       border-color: transparent;
-      box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.15);
       width: 550px;
       height: 200px;
       font-size:1.3em;
       padding:10px;
       line-height:23px;
       @include mobile{
-        width: 230px;
-        height: 100px;
+        width: 60%;
+        height: 200px;
         font-size: 1rem;
         padding:8px;
         line-height:19px;

@@ -48,9 +48,11 @@ export default function Cardbox() {
         {data.map( (d) => (
           <div className="item">
             <p>{d.title}</p>
-            <br /> 
+            <br />
             <span>{d.sub}</span>
+            <br />
             <h5>{d.desc}</h5>
+         
             <p>{d.bottom}</p>
           </div>
         ))}

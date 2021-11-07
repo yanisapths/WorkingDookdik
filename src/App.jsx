@@ -1,6 +1,5 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Resume from "./components/resume/Resume";
 import Letter from "./components/letter/Letter";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
@@ -17,7 +16,6 @@ function App() {
      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <div className="sections">
        <Intro/>
-       <Resume/>
        <Portfolio />
        <Letter />
        <Cardbox />
