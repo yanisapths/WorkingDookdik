@@ -17,6 +17,9 @@
       font-size: 2rem;
       overflow: hidden;
     }
+    @media (max-width: 775px){
+     font-size: 1.8rem;
+    }
   }
   h3{
     font-size:0.85rem;
@@ -28,6 +31,11 @@
       padding-left: 50px;
       padding-right: 50px;
       margin-top: -1em;
+    }
+    @media (max-width: 775px){
+      font-size: 0.6em;
+      text-align: center;
+
     }
   }
   span{
@@ -68,6 +76,11 @@
         width: 60%;
         font-size:1rem;
       }
+      @media (max-width: 775px){
+        width: 65%;
+        height: 25px;
+
+      }
     }
     label{
       margin-bottom:-1em;
@@ -77,6 +90,11 @@
       @include mobile{
         overflow: hidden;
       }
+      @media (max-width: 775px){
+        margin-bottom:-0.2em;
+        font-size: 1rem;
+      }
+      
     }
 
     textarea{
@@ -93,6 +111,10 @@
         font-size: 1rem;
         padding:8px;
         line-height:19px;
+      }
+      @media (max-width: 775px){
+        height: 150px;
+        width: 65%;
       }
     }
 

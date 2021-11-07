@@ -31,7 +31,7 @@ export const projectsPortfolio = [
     },
     {
       id: 6,
-    sub:"One of the criticisms I've faced over the years is that I'm not aggressive enough, or maybe somehow, becuase I'm empathetic, it means I'm weak. ",
+    sub:"Maybe somehow, becuase I'm empathetic, it means I'm weak. ",
      desc: "  “ I refuse to believe that you cannot be both compassionate and strong. ”",
      bottom:"― Jacinda Ardern"
     },

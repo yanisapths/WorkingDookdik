@@ -4,6 +4,8 @@
   background-size: cover;
   background-color: $mainColor;
   display:flex;
+
+  /********************TYPOGRAPHY****************************/
   ul{
     padding-inline-start: 0px;
   }
@@ -11,12 +13,14 @@
     text-align: center;
     font-family: 'Forum', cursive;
     font-weight: 700;
-    //color: #0000F0;
     background: rgba(255, 255, 255, 0.13);
     border: 1px solid #BCFF78;
     box-sizing: border-box;
     box-shadow: 3px 4px 4px rgba(170, 170, 169, 0.22);
     border-radius: 18px;
+    @media (max-width: 775px){    
+      overflow: hidden;
+     }
     
     span.span-link{
       margin: 20px;
@@ -25,7 +29,11 @@
         margin: 12px;
         font-size: 1.2rem;
       }
-    
+      @media (max-width: 775px){   
+        font-size: 0.8rem;
+        margin: 6px; 
+        overflow: hidden;
+       }
     }
   }
  
@@ -41,14 +49,27 @@
     @include mobile{
       margin-top:0.5;
     }
+    @include mobile{
+      margin-top:15px;
+    }
+    
   }
   p{
     font-size: 1.2rem;
-
+    @media (max-width: 775px){
+      font-size: 1rem;
+    }
+    @media (max-width: 775px){
+     font-size: 0.8rem;
+    width: 80%;
+    }
   }
   h3{
    padding: 0 0 0 0 ;
    font-size: 1.5rem;
+   @media (max-width: 775px){
+   width: 40%;
+  }
     
    @include mobile{
      font-size: 1rem;
@@ -57,18 +78,25 @@
     
    }
   }
+  /***********************Layout**************************/
 
   @include mobile{
     display : flex;
     flex-direction:row;
     margin: 0 auto;
-    
+  }
+  @media (max-width: 775px){
+    display: flex;
+    flex-direction:column;
   }
   
     .left{
     flex:0.3;
     margin:2em;
     overflow: hidden;
+    @media (max-width: 775px){
+      flex:1;
+    }
       img{
         justify-content:space-between;
         align-items: center;
@@ -86,13 +114,19 @@
         &:hover {
           transform: scale(1.08);
         }
+        @media (max-width: 775px){
+          float:right;
+          margin-right:4.5em;
+          margin-top: -16em;
+          width:45%;
+          height:100%;
+        }
       }
       @include mobile{
         width: 100%;
       flex:0.35;
        padding-top: 2rem;
        font-size: 0.5rem;
-       
       }
   }
   .right{
@@ -102,19 +136,33 @@
      margin:3em 4em 0 0;
      margin-bottom:0;
      @include mobile{
-      flex:0.65;
+      flex:0.8;
       width: 100%;
+      height: 100%;
      }
+     @media (max-width: 775px){
+     flex:1;
+     width: 90%; 
+    }
     
      h3{
        padding-bottom: 1em;
        overflow: hidden;
       @include mobile{
-        font-size: 1rem;
+        font-size:1.22rem;
+        padding-bottom: 0.5em;
       }
+      @media (max-width: 775px){
+        font-size: 0.8rem;
+        overflow: hidden;
+        width: 100%;
+       }
+      
       
      }
      p{
+      font-family:'Roboto Mono';
+      width: 90%;
        font-size: 1.1rem;
        display: flex;
        text-align: left;
@@ -123,6 +171,12 @@
         font-size: 1rem;
         margin-right:2em;
       }
+      @media (max-width: 775px){
+        margin-right:0;
+        width: 95%;
+        font-size: 1.1em;
+        overflow: hidden;
+       }
        
      }
      footer{
@@ -132,13 +186,17 @@
         padding-top: 0px;   
         padding-bottom: 5em;
         margin-right:3em;
-        
       }
+      @media (max-width: 775px){   
+        //margin-top:1em ;
+        padding-bottom: 0em;
+        height: 30%;
+        overflow: hidden;
+       }
       .contact{
         display: flex;
         overflow: hidden;
         float: right;
-
         .tel{
           flex-direction: column;
           padding-top:35px;
@@ -151,8 +209,12 @@
             font-size: 1rem;
         
             @include mobile {
-              font-size: 0.7rem; 
-              line-height:7px;
+              font-size: 1rem; 
+              line-height:13px;
+             }
+             @media (max-width: 775px){   
+              font-size: 0.75rem; 
+              line-height:9px;
              }
           }
         }
@@ -167,9 +229,15 @@
             object-fit: cover;
           }
           @include mobile {
-            width:50px;
-            height:50px;
+            width:60px;
+            height:90px;
           }
+          @media (max-width: 775px){   
+            width:50px;
+            height:60px;
+           }
+          
+         
         }
         span{
           padding-top:40px;

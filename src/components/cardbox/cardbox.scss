@@ -53,6 +53,10 @@
       font-size: 0.6em;
       margin-top: -6em;
     }
+    @media (max-width: 775px){
+      font-size: 0.8em;
+      margin-top: -4em;
+    }
   }
   /****************************************************************/
   
@@ -95,6 +99,10 @@
             width: 35%;
             height: 23%;
             
+          }
+          @media (max-width: 775px){
+            width: 70%;
+            height: 40%;
           }
           &:hover {
             background-color: black;

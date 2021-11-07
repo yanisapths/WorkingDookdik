@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 140ms ease-out;
+    transition: all 200ms ease-in-out;
     text-align: center;
     @include mobile{
       width: 100%;
