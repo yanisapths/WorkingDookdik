@@ -46,6 +46,7 @@
     @media (max-width: 775px){
       font-size: 0.6em;
       margin-top:-3em;
+      overflow: hidden;
     }
   }
   p{
@@ -89,6 +90,7 @@ main{
   }
   @media (max-width: 775px){
     width: 90%;
+    overflow: hidden;
  }
     
     .left{
