@@ -18,13 +18,12 @@ Animation , OOP ,  and Web Programming, I worked with different group of people 
 </p>
 <p>
 though I'm aware about making mistakes, it is important to have courage to be a changer or admit 
-what i don’t know, ask questions, foster the team to grow and finish the job together.</p>
+what i don’t know, ask questions, foster the team to grow together.</p>
 <p>  
-Communication, trust and support have always been crucial parts of my life. I’m a very team player type 
-of person. Different perspective and opinions are considered as excitments to me which help me adapt faster,
+I’m a team player type of person. Different perspective and opinions are excitments to me which help me to adapt faster,
 understand better in the view that I may not experience like others. 
 To be humble , understand yourself , and be kind doesn’t mean a weakness.</p>
-<p>It is confident and strong to believe in oneself to be able to learn and grow up as an original, and real one.</p>
+<p>I believe in myself to be able to learn and grow up as an original one.</p><br/>
             <p>初めまして、ヤニザです。
 私は自分とpodcastとたくさん仕方で一年ぐらい日本語を勉強します。
 日本語と日本がすてきです、それで本当に綺麗な言葉遣いです。
@@ -34,7 +33,7 @@ To be humble , understand yourself , and be kind doesn’t mean a weakness.</p>
        
 <p>
 <ul>
-    <h3>Download my <a href="https://drive.google.com/file/d/1BXyeFgVcGuYeJ75RLXld90uk9k1NoJMV/view">
+    <h3>Download my <a href="https://drive.google.com/file/d/1ki5guH2O6g0dlHRFPa-Y-9z1mYeOxulg/view?usp=sharing">
         <span className="span-link">resume</span>
         </a>
     </h3>
