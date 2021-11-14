@@ -12,26 +12,24 @@
   a{
     text-align: center;
     font-family: 'Forum', cursive;
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.13);
-    border: 1px solid #BCFF78;
+    //font-weight: 700;
+    text-decoration: underline;
     box-sizing: border-box;
-    box-shadow: 3px 4px 4px rgba(170, 170, 169, 0.22);
-    border-radius: 18px;
+    color: #0000F0;
     @media (max-width: 775px){    
       overflow: hidden;
      }
     
     span.span-link{
-      margin: 20px;
-      font-size: 1.8rem;
+      margin: 10px;
+      font-size: 2rem;
       @include mobile {
-        margin: 12px;
+        margin: 8px;
         font-size: 1.2rem;
       }
       @media (max-width: 775px){   
         font-size: 0.8rem;
-        margin: 6px; 
+        margin: 5px; 
         overflow: hidden;
        }
     }
