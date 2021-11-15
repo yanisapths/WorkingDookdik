@@ -21,8 +21,7 @@ though I'm aware about making mistakes, it is important to have courage to be a 
 what i don’t know, ask questions, foster the team to grow together.</p>
 <p>  
 I’m a team player type of person. Different perspective and opinions are excitments to me which help me to adapt faster,
-understand better in the view that I may not experience like others. 
-To be humble , understand yourself , and be kind doesn’t mean a weakness.</p>
+understand better in the view that I may not experience like others. </p>
 <p>I believe in myself to be able to learn and grow up as an original one.</p><br/>
             <p>初めまして、ヤニザです。
 私は自分とpodcastとたくさん仕方で一年ぐらい日本語を勉強します。

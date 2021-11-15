@@ -57,7 +57,7 @@
     @media (max-width: 775px){
       font-size: 1rem;
     }
-    @media (max-width: 775px){
+    @include mobile{
      font-size: 0.8rem;
     width: 80%;
     }
@@ -168,14 +168,11 @@
        margin-right:5em;
        overflow: hidden;
        margin-bottom: 7.5px;
-       @include mobile{
-        font-size: 1rem;
-        margin-right:2em;
-      }
       @media (max-width: 775px){
+        margin-bottom: 0;
         margin-right:0;
         width: 95%;
-        font-size: 0.9em;
+        font-size: 0.82em;
         overflow: hidden;
        }
 
