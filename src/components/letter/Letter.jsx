@@ -12,17 +12,15 @@ export default function Letter() {
             </div>
             <div className="right">
            <p> <h3>From strangers... to friends ,</h3></p>
-            <p>I’m a lifelong learner. I love learning and working with people and never stop trying. 
-From recent projects during many courses in the university such as Software Engineering, Database system , 
-Animation , OOP ,  and Web Programming, I worked with different group of people all along , 
-</p>
-<p>
-though I'm aware about making mistakes, it is important to have courage to be a changer or admit 
-what i don’t know, ask questions, foster the team to grow together.</p>
-<p>  
-I’m a team player type of person. Different perspective and opinions are excitments to me which help me to adapt faster,
-understand better in the view that I may not experience like others. </p>
-<p>I believe in myself to be able to learn and grow up as an original one.</p><br/>
+            <p>I love learning and working with people and never stop trying. </p>
+            <p>
+            I'm very self-motivated, diligent and a team player. I think what we need in our lives is try really hard for what is important and don't let fear of failure stop doing what you are really care about for yourself not as a prove of others. 
+            I don't believe at all what other think of me will ever effect or degrade me or the idea of not being smart enough to do what I want. It's really easy to judge yourself, and think that you won't make it. 
+            </p>
+            <p>  
+            Fear is good, but being able to have courage to change and overcome that is another thing. It is normal to fail, to lose but I have a faith in myself that I will get back up and change to improve for the better. </p>
+            <p>Finally, I believe in myself to be able to learn and grow up as an original one. I will never give up and lose faith on myself</p>
+<br/>
             <p>初めまして、ヤニザです。
 私は自分とpodcastとたくさん仕方で一年ぐらい日本語を勉強します。
 日本語と日本がすてきです、それで本当に綺麗な言葉遣いです。
